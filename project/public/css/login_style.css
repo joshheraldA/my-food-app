@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+.container-input {
+    display: flex;
+    width: 50vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ,url('../assets/a6bd4db7ee7053689bd971b36cbcd1ef.jpg');
+    background-size: cover;
+    justify-content: left;
+    align-items: top;
+}
+
+.container-input button {
+    position: absolute;
+    margin-top: 280px;
+    left: 410px;
+    width: 10vw;
+    background-color:white;
+    height: 7vh;
+    outline:none;
+    border-radius: 10px;
+    border: 2px solid white;
+    color: rgb(53, 52, 52);
+    transition: all 0.2s ease-in;
+
+}
+
+
+.inputs { 
+    position: absolute;
+    border-radius: 10px;
+    outline: none;
+    background: white;
+    border: 2px solid white;
+    width: 25vw;
+    height: 50px;
+    padding:0 30px;
+}
+
+.container-input form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+    margin-left: 30px;
+}
+
+.container-input div {
+    margin-top: 8vh;
+    margin-left: 100px;
+}
+
+.inputs:hover,
+.inputs:focus {
+    border: 2px solid lightgreen;
+    background-color: white;
+}
+
+
+
+/* Base styles for the label */
+.labels {
+    border-radius: 80px;
+    position: relative; 
+    z-index: 1;
+    background: transparent;
+    color: rgb(163, 161, 161);
+    top: 16px; 
+    left: 30px; 
+    transition: all 0.2s ease-out; 
+    pointer-events: none;
+    font-size: 15px;
+}
+
+#password-container {
+    margin-top: 100px;
+}
+
+/* Styles applied when the input is hovered or focused */
+.inputs:hover + label,
+.inputs:focus + label,
+.inputs:not(:placeholder-shown) + label {
+    color: lightgreen;
+    top: -10px; 
+    font-size: 0.8em;
+    font-size: 13px; 
+    /* ADD THIS LINE to give the label a white background when it floats */
+    background-color: white; 
+    /* To ensure the background doesn't bleed, you might also want a small padding */
+    padding: 0 5px; 
+    border-radius: 10px;
+}
+
+button:hover,
+button:active {
+    color: white;
+    background-color:rgb(75, 210, 66);
+    border: 4px solid rgb(75, 210, 66);
+    border-radius: 20px;
+}
+
+.right-side-container {
+    position: absolute;
+    top: 30%;
+    left: 55%;
+}
+
+#about-me {
+    font-size: 10vh;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+}
+
+#details {
+    margin-top: 2vh;
+    font-size: 2.5vh;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 4vh;
+    font-weight: 500;
+}
+
+.navbar {
+    position: absolute;
+    margin-left: 3vw;
+    top: 10px;
+    left: 45vw;
+}
+
+.navbar ul {
+    display:flex
+}
+
+.navbar li {
+    margin-left: 3vw;
+    font-style: none;
+}
